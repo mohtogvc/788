@@ -55,6 +55,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const selectedAnswer = document.querySelector('input[name="answer"]:checked');
         if (selectedAnswer && selectedAnswer.value === 'a') {
             showNotification("ياخي والله انك ذكي احبك.", 'green');
+
+            setTimeout(function() {
+                window.location.href = 'winner4.html'; // Redirect to winner.html
+            }, 2000); // 13 seconds in milliseconds
+
         } else {
             handleWrongAnswer();
         }
