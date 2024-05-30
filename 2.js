@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (selectedAnswer && selectedAnswer.value === 'a') {
             showNotification("ياخي والله انك ذكي احبك.", 'green');
             setTimeout(function() {
-                window.location.href = 'winner4.html'; // Redirect to winner.html
+                window.location.href = 'winner.html'; // Redirect to winner.html
             }, 2000); // 13 seconds in milliseconds
         } else {
             handleWrongAnswer();
